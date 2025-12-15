@@ -1,4 +1,4 @@
-cat > dashboard_responsive.py << 'EOF'
+cat > dashboard.py << 'EOF'
 #!/usr/bin/env python3
 """
 Dashboard RESPONSIVE - Tableau 100% largeur terminal
