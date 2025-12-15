@@ -1,22 +1,42 @@
-# 🌐 Web Monitoring Dashboard
+# 🌐 Web Monitoring Dashboard - Responsive Terminal Interface
 
-Un dashboard élégant et responsive pour surveiller l'état de vos sites web en temps réel, avec vérification SSL intégrée et interface adaptative au terminal.
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rich Terminal](https://img.shields.io/badge/terminal-rich-green)](https://github.com/Textualize/rich)
 
-## 🎯 Deux modes d'installation disponibles
+Un dashboard élégant et **100% responsive** pour surveiller vos sites web en temps réel. L'interface s'adapte automatiquement à la taille de votre terminal avec vérification SSL intégrée.
 
-### 🔧 **Mode 1 : Installation COMPLÈTE (repart de zéro)**
-**Utilisez ce mode si vous n'avez AUCUN fichier du projet.**
 
+## ✨ Fonctionnalités principales
+
+- ✅ **Monitoring HTTP/HTTPS** en temps réel
+- 🔒 **Vérification SSL** avec expiration détaillée
+- 📱 **Interface 100% responsive** - s'adapte au terminal
+- ⚡ **Vérifications parallèles** pour plus de rapidité
+- 🎨 **UI colorée** avec la bibliothèque Rich
+- 📊 **Statistiques live** mise à jour automatiquement
+- 🔄 **Auto-refresh** configurable (30s par défaut)
+- 🚨 **Alertes visuelles** par code couleur
+- 📈 **Historique des performances**
+
+## 🚀 Installation Ultra-Rapide (30 secondes)
+
+### **Option A : Installation depuis ZÉRO** (sans fichiers existants)
 ```bash
-# 1. Téléchargez seulement le script setup.sh
+# 1. Télécharger seulement le script d'installation
 curl -O https://raw.githubusercontent.com/uprod/ssl-domains-check/main/setup.sh
 
-# 2. Exécutez-le pour créer TOUS les fichiers
+# 2. Exécuter pour créer TOUT le projet
 chmod +x setup.sh
 ./setup.sh
 
-# Maintenant vous avez :
-# - dashboard.py (dashboard principal)
-# - sites.example.json (exemple de configuration)
-# - install.sh (installation dépendances)
-# - start.sh (lancement)
+# 3. Installer les dépendances
+chmod +x install.sh start.sh
+./install.sh
+
+# 4. Configurer vos sites
+cp sites.example.json sites.json
+nano sites.json  # Éditez avec vos URLs
+
+# 5. Lancer !
+./start.sh
