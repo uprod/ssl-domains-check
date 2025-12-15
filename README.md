@@ -40,7 +40,7 @@ nano sites.json  # Éditez avec vos URLs
 
 # 5. Lancer !
 ./start.sh
-
+```
 
 ### **Option B : Installation LÉGÈRE** (fichiers existants)
 ```bash
@@ -50,7 +50,7 @@ chmod +x install.sh start.sh
 cp sites.example.json sites.json
 nano sites.json
 ./start.sh
-
+```
 
 ### **📋 Configuration**
 ```json
@@ -73,3 +73,4 @@ nano sites.json
 		}
 	]
 }
+```
