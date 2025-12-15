@@ -40,3 +40,36 @@ nano sites.json  # Éditez avec vos URLs
 
 # 5. Lancer !
 ./start.sh
+
+
+### **Option B : Installation LÉGÈRE** (fichiers existants)
+```bash
+# Si vous avez déjà les fichiers (git clone, téléchargement ZIP)
+chmod +x install.sh start.sh
+./install.sh
+cp sites.example.json sites.json
+nano sites.json
+./start.sh
+
+
+### **📋 Configuration**
+```json
+{
+	"refresh_interval": 30,
+	"sites": [
+		{
+			"name": "Google Search",
+			"url": "https://www.google.com",
+			"expected_status": 200,
+			"ssl_check": true,
+			"timeout": 5
+		},
+		{
+			"name": "GitHub",
+			"url": "https://github.com",
+			"expected_status": 200,
+			"ssl_check": true,
+			"timeout": 5
+		}
+	]
+}
